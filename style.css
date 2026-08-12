@@ -22,7 +22,7 @@
 
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
-  background-color: #7fb2db;
+  background-color: rgb(160, 171, 201);
   color: white;
   font-family: 'Brush Script MT ', cursive;
   font-size: 22px;
@@ -51,4 +51,95 @@
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
+}
+
+body {
+  background-color: rgb(172, 180, 201);
+  margin: 0;
+}
+
+h5 {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  color:#ccc
+}
+
+.moving {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(to bottom, rgba(10,5,32,0.55) 0%, rgba(10,5,32,0.85) 100%),
+    url("Golden-Gate-Bridge-San-Francisco.webp");
+  background-size: cover;
+  background-repeat: repeat-y;
+  animation: scroll-vertical 10s linear infinite alternate;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  height: 40%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #6d626a;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+}
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.25rem;
+}
+
+#catalog {
+  padding: 3.5rem 1.25rem 5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }

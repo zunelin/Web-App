@@ -2,27 +2,104 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <title>What to do Today?</title>
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-sm bg-light">
-            <div class="container-fluid">
-                 <!--Links -->
-                 <a class="navbar-brand" href="index.html"><b>What to do Today?</b></a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Activity</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="professional.html">Acitivty</a>
-                    </li>
-                </ul>
+        <div class="topnav">
+            <!-- Kept the exact same matching links -->
+            <a href="index.html">What to do Today?</a>
+            <a class="active" href="activity.html">Activity</a>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="moving"></div>
+        <section id="catalog">
+            <div class="section-header"></div>
+            <div id="card-grid"></div>
+        </section>
+        <div class="container">
+        <img src="gameroom (1).jpg" alt="game" class="image">
+        <h4>Escape Room</h4>
+        <div class="overlay">
+            <div class="text">
+            <a class="escape" href="https://palace-games.com/our-games/" target="_blank">Palace Games</a>
+                <p>
+                    $425 for 4-8 players
+                <br>
+                    80 - 120 minutes of an immersive experience depending on the room
+                <br>
+                    Hours: Mon-Fri 9am-9pm, Sat & Sun 8:30am-11pm
+                <br> Location: 3362 Palace Dr San Francisco, CA 94123</p>
             </div>
-        </nav>
+        </div>
+        </div>
+        <div class="container">
+        <img src="golf.jpg" alt="mini golf" class="image">
+        <h4>Mini Golf</h4>
+        <div class="overlay">
+            <div class="text">
+                <a class="golf" href="https://www.subparminigolf.com/" target="_blank">Subpar Miniature Golf</a>
+                <p>
+                    $34 for 2 players, can play up to 6 people
+                <br>
+                    90 minutes of playtime
+                </p>
+                <p>
+                    Hours: Mon-Thu 11am-9pm, Fri & Sat 11am-11pm, Sun 10am-9pm
+                <br> Location: 900 North Point St Ste F-201 San Francisco, CA 94109</p>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+        <img src="movie.jpg" alt="movie" class="image">
+        <h4>Movie</h4>
+        <div class="overlay">
+            <div class="text">
+                <a class="movie" href="https://www.amctheatres.com/movie-theatres/san-francisco/amc-metreon-16" target="_blank">AMC Metreon 16</a>
+                <p>
+                    $15 for 1 ticket, can buy up to 10 tickets
+                <br>
+                    2-3 hours of movie time
+                </p>
+                <p>
+                    Hours: Mon-Sun 11am-11pm
+                <br> Location: 135 4th St #3000, San Francisco, CA 94103</p>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+        <img src="bones.jpg" alt="Science Museum" class="image">
+        <h4>Science Museum</h4>
+        <div class="overlay">
+            <div class="text">
+                <a class="museume" href="https://www.calacademy.org/" target="_blank">California Academy of Science</a>
+                <p>
+                    $49 for adult ticket, $45 for youth ticket, $39 for child ticket
+                <br>
+                    Hours: Mon-Sat 9:30am-5pm, Sun 11am-5pm
+                <br>
+                    Location: California Academy of Sciences, 55 Music Concourse Dr, San Francisco, CA 94118</p>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+        <img src="images.jpg" alt="Public Laboratory" class="image">
+        <h4>Public Laboratory</h4>
+        <div class="overlay">
+            <div class="text">
+                <a class="museume" href="https://www.exploratorium.edu/visit?gad_source=1&gad_campaignid=17630272269&gbraid=0AAAAAC9VsrPRldt1nyLluaSRHg9ZSNMr-&gclid=CjwKCAjws_DTBhB_EiwAXZknGRnqxbuN40w5dzSmBlSTjvil4IqXe1I_yRolix88bLLPiJnkAr7fnRoC8zkQAvD_BwE" target="_blank">Exploratorium</a>
+                <p>
+                    $40 for adult ticket, $30 for youth, students, seniors, and people with disabilities
+                <br>
+                    Hours: Tues, Wed, Fri, Sat 10am-5pm, Thurs 10am-10pm, Sun 12pm-5pm
+                <br>
+                    Location: Pier 15 Embarcadero at, Green St, San Francisco, CA 94111</p>
+            </div>
+        </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
     </html>
