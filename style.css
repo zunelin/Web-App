@@ -78,16 +78,20 @@ h5 {
   animation: scroll-vertical 10s linear infinite alternate;
 }
 
+/* Individual card styling */
 .container {
-  position: relative;
-  width: 50%;
-  height: 40%;
+  position: relative; /* Essential to keep .overlay constrained to this card */
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Force grid child elements to match tallest card */
+  overflow: hidden;
 }
 
+/* Card images scaling uniformly */
 .image {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 480px;
+  object-fit: cover; /* Crops image cleanly without distortion */
 }
 
 .overlay {
@@ -123,10 +127,13 @@ h4 {
   text-align: center;
 }
 
+/* Parent container layout */
 #card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: 1.25rem;
+  /* Automatically forms equal columns based on space; changes rows dynamically */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 20px;
 }
 
 #catalog {
@@ -142,4 +149,39 @@ h4 {
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2rem;
+}
+
+.escape {
+  text-decoration: none;
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+.golf {
+  text-decoration: none;
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+.movie {
+  text-decoration: none;
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+.museume {
+  text-decoration: none;
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+.tour {
+  text-decoration: none;
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+p {
+  font-size: 15px;
+  text-align: left;
 }
