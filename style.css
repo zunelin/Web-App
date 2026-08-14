@@ -58,26 +58,6 @@ body {
   margin: 0;
 }
 
-h5 {
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 30px;
-  color:#ccc
-}
-
-.moving {
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  background-image:
-    linear-gradient(to bottom, rgba(10,5,32,0.55) 0%, rgba(10,5,32,0.85) 100%),
-    url("Golden-Gate-Bridge-San-Francisco.webp");
-  background-size: cover;
-  background-repeat: repeat-y;
-  animation: scroll-vertical 10s linear infinite alternate;
-}
-
 /* Individual card styling */
 .container {
   position: relative; /* Essential to keep .overlay constrained to this card */
@@ -112,9 +92,12 @@ h5 {
 }
 
 h4 {
-  color: white;
+  color: rgb(21, 19, 19);
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
+
 .text {
   color: white;
   font-size: 15px;
@@ -154,34 +137,88 @@ h4 {
 .escape {
   text-decoration: none;
   font-size: 20px;
-  padding-bottom: 12px;
+  padding-bottom: 15px;
 }
 
 .golf {
   text-decoration: none;
   font-size: 20px;
-  padding-bottom: 12px;
+  padding-bottom: 15px;
 }
 
 .movie {
   text-decoration: none;
   font-size: 20px;
-  padding-bottom: 12px;
+  padding-bottom: 15px;
 }
 
 .museume {
   text-decoration: none;
   font-size: 20px;
-  padding-bottom: 12px;
+  padding-bottom: 15px;
 }
 
 .tour {
   text-decoration: none;
   font-size: 20px;
-  padding-bottom: 12px;
+  padding-bottom: 15px;
 }
 
 p {
   font-size: 15px;
   text-align: left;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.row {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+h6 {
+  text-align: center;
+  color: #ccc;
+  font-size: 20px;
+  padding: 60px 40px; 
+  background-color: rgba(10, 5, 32, 0.55);
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+h5{
+  text-align: center;
+  color: #ccc;
+  font-size: 20px;
+  padding: 60px 40px; 
+  background-color: rgba(10, 5, 32, 0.55);
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
